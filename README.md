@@ -18,10 +18,10 @@
 
 > The Singleton pattern is a creational design pattern that restricts the instantiation of a class to a single instance and provides a global point of access to that instance. In other words, it ensures that a class has only one instance and provides a mechanism for accessing that instance throughout the application.
 
-> Misuse - Reflection : using reflection JAVA can set the private constructor to become accessible at runtime with getDeclaredConstructor of class. To fix this, use private constructor of the Singleton class
+> **Misuse - Reflection** : using reflection JAVA can set the private constructor to become accessible at runtime with getDeclaredConstructor of class. To fix this, use private constructor of the Singleton class
 
-> Misuse - Clone : Java generate clone instance with hash code of original instance. it doesn't match with the original object. To prevent this, override the clone method and throw CloneNotSupportedExcpetion for example.
+> **Misuse - Clone** : Java generate clone instance with hash code of original instance. it doesn't match with the original object. To prevent this, override the clone method and throw CloneNotSupportedExcpetion for example.
 
-> Misuse - Serialization : when JAVA serialize an object and deserialize it again, there are different hash code values for instance ObjectOutputStream / ObjectInputStream. To prevent this, implement readResolve() method and return current instance of class.
+> **Misuse - Serialization** : when JAVA serialize an object and deserialize it again, there are different hash code values for instance ObjectOutputStream / ObjectInputStream. To prevent this, implement readResolve() method and return current instance of class.
 
 ## Structural Patterns
