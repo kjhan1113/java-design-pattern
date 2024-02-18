@@ -2,7 +2,7 @@
 
 ## Behavioral Patterns
 
-** Template Method **
+**Template Method**
 > The Template Method Design Pattern is a behavioral design pattern that defines the skeleton of an algorithm in the superclass but lets subclasses override specific steps of the algorithm without changing its structure
 
 > The pattern consists of a template method in the superclass, which contains the algorithm's structure and invokes abstract methods (or hooks) that are implemented by subclasses.
